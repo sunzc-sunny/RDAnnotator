@@ -1,0 +1,4 @@
+requests>=2.31.0
+openai
+opencv-python
+numpy
