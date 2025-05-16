@@ -1,0 +1,2 @@
+The white cars near the multi-story building.
+Coordinates: [0.457, 0.374], [0.473, 0.36]

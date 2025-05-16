@@ -1,0 +1,5 @@
+The bus is located near the bottom of the image.
+Coordinates: [0.377, 0.191]
+
+The van is parked near the bottom left corner of the image.
+Coordinates: [0.112, 0.212]

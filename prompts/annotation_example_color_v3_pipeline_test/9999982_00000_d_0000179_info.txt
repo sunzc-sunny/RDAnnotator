@@ -1,0 +1,27 @@
+Captions:
+The image is an aerial view that shows a large blue running track and field area, which appears to be a sports stadium. Adjacent to the stadium, there are rows of multi-story residential buildings. On one side, there is an active construction site with various materials, equipment, and partially constructed structures.
+
+The image presents an aerial view of an active construction site. In the center, there is a large rectangular building with a blue roof under construction. Surrounding this central structure are various construction materials, equipment, and temporary structures scattered across the site.  Adjacent to the construction area is a paved road that leads to a circular sports stadium or arena with a running track visible.
+
+The image is an aerial view that shows a large blue running track surrounding a grassy field, which appears to be a sports stadium or arena. Adjacent to the stadium, there is a construction site or storage area with various materials, equipment, and temporary structures visible. The surrounding area consists of multi-story residential or commercial buildings.
+
+
+Objects:
+truck, black: [0.377, 0.191]
+car, white: [0.457, 0.374]
+car, white: [0.473, 0.36]
+van, white: [0.894, 0.532]
+car, white: [0.921, 0.456]
+car, black: [0.95, 0.468]
+car, black: [0.965, 0.471]
+car, black: [0.979, 0.476]
+
+
+Questions:
+The white truck parks near the sports stadium.
+
+The white cars near the multi-story buildings.
+
+The dark cars locate near the edge of the image.
+
+The bright van parks adjacent to the construction site.

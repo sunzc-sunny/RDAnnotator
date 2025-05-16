@@ -1,0 +1,5 @@
+The truck parks near the sports stadium.
+Coordinates: [0.377, 0.191]
+
+The cars near the multi-story building.
+Coordinates: [0.457, 0.374], [0.473, 0.36]

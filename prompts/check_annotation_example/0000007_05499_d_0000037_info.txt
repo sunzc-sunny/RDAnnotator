@@ -1,0 +1,77 @@
+Captions:
+The image shows an aerial view of a vehicle storage or parking area with rows of uniform white trucks, some featuring red flags covered. There are also various other vehicles and structures within the vicinity.
+
+The image shows an aerial view of a commercial vehicle storage or parking area with neatly arranged trucks and vans, some adorned with small red flags covering their cargo areas. There's also a building adjacent to the parking space and a few other vehicles scattered around, including a green machinery, a blue truck and two red trucks.
+
+The photo shows an aerial view of a vehicle storage or parking area with rows of trucks and vans, some with red flags covered. A building is visible on the right side, and there are trees in the background.
+
+
+Objects:
+car, white: [0.058, 0.611]
+truck, red: [0.177, 0.937]
+truck, red: [0.208, 0.837]
+truck, red: [0.254, 0.737]
+truck, blue: [0.291, 0.659]
+truck, red: [0.31, 0.573]
+truck, blue: [0.329, 0.52]
+truck, blue: [0.346, 0.469]
+truck, red: [0.369, 0.441]
+truck, black: [0.385, 0.405]
+truck, red: [0.388, 0.372]
+truck, red: [0.406, 0.342]
+truck, red: [0.42, 0.32]
+truck, red: [0.428, 0.295]
+truck, red: [0.436, 0.275]
+truck, red: [0.442, 0.247]
+truck, red: [0.451, 0.229]
+truck, red: [0.457, 0.205]
+truck, red: [0.46, 0.183]
+truck, red: [0.469, 0.172]
+truck, green: [0.244, 0.331]
+truck, white: [0.266, 0.305]
+truck, white: [0.291, 0.271]
+truck, blue: [0.311, 0.242]
+truck, white: [0.334, 0.214]
+truck, blue: [0.351, 0.167]
+truck, blue: [0.361, 0.156]
+truck, white: [0.418, 0.099]
+truck, black: [0.423, 0.087]
+truck, blue: [0.972, 0.437]
+truck, red: [0.717, 0.402]
+truck, red: [0.584, 0.282]
+truck, blue: [0.642, 0.286]
+car, red: [0.631, 0.236]
+truck, black: [0.592, 0.923]
+truck, red: [0.592, 0.815]
+truck, black: [0.598, 0.732]
+truck, white: [0.56, 0.614]
+truck, blue: [0.63, 0.624]
+truck, white: [0.703, 0.642]
+truck, black: [0.775, 0.651]
+truck, black: [0.856, 0.678]
+truck, black: [0.944, 0.703]
+truck, white: [0.496, 0.122]
+truck, black: [0.5, 0.11]
+truck, white: [0.503, 0.09]
+truck, black: [0.65, 0.112]
+car, white: [0.644, 0.068]
+van, white: [0.644, 0.052]
+truck, white: [0.507, 0.078]
+van, blue: [0.522, 0.069]
+van, black: [0.526, 0.061]
+van, black: [0.531, 0.05]
+van, black: [0.531, 0.041]
+van, black: [0.535, 0.037]
+car, white: [0.631, 0.029]
+car, white: [0.642, 0.017]
+van, black: [0.537, 0.025]
+van, black: [0.539, 0.018]
+car, black: [0.542, 0.012]
+
+
+Descriptions:
+The red truck in the image.
+Coordinates: [0.351, 0.167], [0.717, 0.402], [0.584, 0.282], [0.291, 0.659], [0.369, 0.441], [0.385, 0.405], [0.388, 0.372], [0.406, 0.342], [0.42, 0.32], [0.428, 0.295], [0.436, 0.275], [0.442, 0.247], [0.592, 0.923]
+
+The car on the far left.
+Coordinates: [0.058, 0.611]

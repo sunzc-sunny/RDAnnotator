@@ -1,0 +1,15 @@
+The white truck parks near the sports stadium.
+Coordinates: [0.377, 0.191]
+Yes
+
+The white cars near the multi-story building.
+Coordinates: [0.457, 0.374], [0.921, 0.456], [0.473, 0.36]
+No, the corrdinate [0.921, 0.456] is not near the multi-story building.
+
+The dark cars locate near the edge of the image.
+Coordinates: [0.95, 0.468], [0.979, 0.476]
+No, the corrdinate [0.965, 0.471] is also a dark car which locate near the edge of the image.
+
+The bright van parks adjacent to the construction site.
+Coordinates: [0.894, 0.532]
+Yes

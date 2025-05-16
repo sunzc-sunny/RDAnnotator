@@ -1,0 +1,11 @@
+The truck parks near the sports stadium.
+Coordinates: [0.473, 0.36]
+No, the coordinates is not truck.
+
+The cars near the multi-story building.
+Coordinates: [0.457, 0.374], [0.473, 0.36]
+Yes
+
+The cars are parked together on the right side of the image.
+Coordinates: [0.921, 0.456], [0.95, 0.468], [0.965, 0.471], [0.979, 0.476]
+Yes
