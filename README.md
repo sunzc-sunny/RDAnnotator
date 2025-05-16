@@ -65,3 +65,7 @@ A toolset for annotating and verifying drone images using GPT-4-o.
    # After the batch requests completed, run the following to get response from OpenAI.
    python get_annotation/color_tools/get_batch_color_annotation.py
    ```
+
+## License
+
+This project is licensed under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license.
