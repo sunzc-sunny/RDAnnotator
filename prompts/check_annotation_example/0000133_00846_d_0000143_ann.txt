@@ -1,0 +1,8 @@
+The blue cars park on the right parking lot.
+Coordinates: [0.628, 0.478], [0.646, 0.692], [0.649, 0.727]
+Yes
+
+The white cars park on both sides of the main road in a line.
+Coordinates: [0.431, 0.051], [0.431, 0.15], [0.431, 0.101], [0.434, 0.256], [0.439, 0.523], [0.443, 0.813], [0.445, 0.902], [0.446, 0.982], [0.235, 0.43]
+No, the corrdinates [0.232, 0.486], [0.223, 0.674], [0.215, 0.904] are also white cars park on both sides of the main road.
+

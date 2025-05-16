@@ -1,0 +1,30 @@
+Captions:
+The image shows a nighttime view of an urban street with vehicles moving, illuminated by street lights and the glow from nearby buildings and signage.
+
+The image captures a nighttime scene of an urban street from an aerial perspective, showing moving vehicles with their headlights on, creating streaks of light as they travel along the road. Surrounding buildings are dimly lit.
+
+The image captures a nighttime scene of a street with moving vehicles, their headlights creating streaks of light. The surrounding area is dimly lit, highlighting the activity on the road.
+
+
+Objects:
+car: [0.496, 0.74]
+car: [0.531, 0.486]
+car: [0.501, 0.581]
+car: [0.558, 0.418]
+car: [0.598, 0.397]
+car: [0.59, 0.338]
+car: [0.587, 0.293]
+bus: [0.49, 0.909]
+car: [0.361, 0.121]
+car: [0.347, 0.236]
+van: [0.112, 0.212]
+car: [0.13, 0.205]
+car: [0.665, 0.173]
+car: [0.705, 0.213]
+car: [0.699, 0.16]
+car: [0.731, 0.152]
+car: [0.759, 0.147]
+motor: [0.719, 0.554]
+people: [0.721, 0.546]
+car: [0.829, 0.09]
+car: [0.898, 0.341]

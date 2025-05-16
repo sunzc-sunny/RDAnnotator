@@ -1,0 +1,11 @@
+pedestrian, black: [0.067, 0.899]
+pedestrian, black: [0.123, 0.931]
+pedestrian, black: [0.158, 0.899]
+pedestrian, yellow: [0.67, 0.545]
+pedestrian, blue: [0.463, 0.568]
+pedestrian, yellow: [0.427, 0.587]
+pedestrian, blue: [0.508, 0.414]
+pedestrian, blue: [0.503, 0.44]
+pedestrian, blue: [0.781, 0.226]
+pedestrian, blue: [0.702, 0.19]
+

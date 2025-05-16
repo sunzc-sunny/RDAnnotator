@@ -1,0 +1,2 @@
+The red truck in the image.
+Coordinates: [0.351, 0.167], [0.717, 0.402], [0.584, 0.282]

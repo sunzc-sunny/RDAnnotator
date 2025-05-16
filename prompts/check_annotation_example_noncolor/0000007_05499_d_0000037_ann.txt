@@ -1,0 +1,13 @@
+The truck with red flags.
+Coordinates: [0.291, 0.659], [0.369, 0.441], [0.385, 0.405], [0.388, 0.372], [0.406, 0.342], [0.42, 0.32], [0.428, 0.295], [0.436, 0.275], [0.442, 0.247], [0.592, 0.923]
+Yes
+
+The car on the far left.
+Coordinates: [0.644, 0.068]
+No, the car at [0.644, 0.068] is not positioned on the far left side.
+
+
+The truck in the bottom right of the image.
+Coordinates: [0.592, 0.923], [0.592, 0.815], [0.598, 0.732], [0.56, 0.614], [0.63, 0.624], [0.703, 0.642], [0.775, 0.651], [0.856, 0.678], [0.944, 0.703]
+Yes
+
