@@ -9,6 +9,8 @@ from PIL import Image
 from check_annotation_chatgpt import CheckAnnotationColor
 
 from io import BytesIO
+from dotenv import load_dotenv
+load_dotenv()
 
 class BatchCheckAnnotationColor(CheckAnnotationColor):
     def __init__(self, image_dir, info_dir, prompt_dir, save_dir, all_image_dir, caption_dir, annotation_dir, n=1):
