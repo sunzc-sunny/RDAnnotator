@@ -12,6 +12,8 @@ from io import BytesIO
 import json
 from collections import defaultdict
 import pycocotools.coco as coco
+from dotenv import load_dotenv
+load_dotenv()
 
 
 
