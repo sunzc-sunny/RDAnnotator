@@ -5,7 +5,7 @@ import os
 from concurrent.futures import ThreadPoolExecutor
 import re                                                                                            
 
-from color_agents.regenerate_annotation_color import RegenerateAnnotatorColorV3
+from color_tools.regenerate_annotation_color import RegenerateAnnotatorColorV3
 
 class RegenerateAnnotatorNonColorV3(RegenerateAnnotatorColorV3):
     def __init__(self, prompt_dir, info_dir, image_dir, save_dir, all_image_dir, caption_dir, annotation_dir, n=1):
