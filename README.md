@@ -11,7 +11,7 @@ A toolset for annotating and verifying drone images using GPT-4-o.
    ```
 3. Create a `.env` file based on `.env.example`:
    ```bash
-   cp .env.example .env
+   cp .env_example .env
    ```
 4. Edit `.env` with your actual paths and API keys
 
