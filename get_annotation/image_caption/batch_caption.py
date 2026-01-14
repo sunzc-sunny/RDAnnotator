@@ -8,14 +8,15 @@ import re
 from PIL import Image
 
 from io import BytesIO
+from dotenv import load_dotenv
+load_dotenv()
 
 class Captioner():
 
     def __init__(self, image_dir, prompt_dir, save_dir, all_image_dir, n=3):
 
         self.api_key = os.getenv('OPENAI_API_KEY', 'your-api-key-here')
-
-        self.url = "https://api.openai.com/v1/chat/completions"  
+        self.url = os.getenv('OPENAI_API_URL', 'https://api.openai.com/v1/chat/completions')  
 
         self.save_dir = save_dir
         self.image_dir = image_dir

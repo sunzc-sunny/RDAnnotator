@@ -4,6 +4,8 @@ import re
 import requests
 from concurrent.futures import ThreadPoolExecutor
 from typing import List, Dict, Optional
+from dotenv import load_dotenv
+load_dotenv()
 
 class ColorAnnotatorV3():
     """Color annotation tool using GPT-4 vision API."""
@@ -117,6 +119,21 @@ To refer to a specific object, use the provided coordinates directly. Base your 
     def get_query_message(self, image_name):
         bbox_file = os.path.join(self.info_dir, image_name.replace(".jpg", ".txt"))
         caption_file = os.path.join(self.caption_dir, image_name.replace(".jpg", ".txt"))
+
+        # Check if files exist before reading
+        if not os.path.exists(bbox_file):
+            raise FileNotFoundError(
+                f"Info file not found: {bbox_file}\n"
+                f"Please ensure the info_dir '{self.info_dir}' contains the corresponding .txt file for image '{image_name}'.\n"
+                f"Expected file: {bbox_file}"
+            )
+        
+        if not os.path.exists(caption_file):
+            raise FileNotFoundError(
+                f"Caption file not found: {caption_file}\n"
+                f"Please ensure the caption_dir '{self.caption_dir}' contains the corresponding .txt file for image '{image_name}'.\n"
+                f"Expected file: {caption_file}"
+            )
 
         with open(bbox_file, "r") as f:
             bbox_info = f.read()

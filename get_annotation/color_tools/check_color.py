@@ -5,6 +5,8 @@ import requests
 from concurrent.futures import ThreadPoolExecutor
 from typing import List, Dict, Optional
 
+from dotenv import load_dotenv
+load_dotenv()
 
 class CheckColor():
     """Tool for verifying color attributes using GPT-4 vision API."""

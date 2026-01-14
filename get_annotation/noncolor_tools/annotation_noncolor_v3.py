@@ -5,7 +5,9 @@ import os
 from concurrent.futures import ThreadPoolExecutor
 import re                                                                                            
 
-from color_tools.color_annotation_v3 import ColorAnnotatorV3
+from ..color_tools.color_annotation_v3 import ColorAnnotatorV3
+from dotenv import load_dotenv
+load_dotenv()
 
 class AnnotatorNonColorV3(ColorAnnotatorV3):
     def __init__(self, prompt_dir, info_dir, image_dir, save_dir, all_image_dir, caption_dir, n=1):

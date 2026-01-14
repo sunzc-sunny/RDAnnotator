@@ -6,13 +6,15 @@ import os
 from concurrent.futures import ThreadPoolExecutor
 import re
 from PIL import Image
-from color_annotation_v3 import ColorAnnotatorV3
+from .color_annotation_v3 import ColorAnnotatorV3
 
 from io import BytesIO
 import json
 from collections import defaultdict
 import pycocotools.coco as coco
 
+from dotenv import load_dotenv
+load_dotenv()
 
 
 def get_questions(questions_path):

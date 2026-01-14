@@ -49,7 +49,7 @@ A toolset for annotating and verifying drone images using GPT-4-o.
 
 1. Run the RDAnnotator:
    ```python
-   python get_annotation/rdannotator.py
+   python get_annotation/main.py
    ```
 2. Or run individual tools:
    ```python

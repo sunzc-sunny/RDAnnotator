@@ -8,7 +8,7 @@ from vocr_dataset import VCoR
 
 class CustomWideResNet101(nn.Module):
     def __init__(self, num_classes=6):
-        super(CustomWideResNet101, self).__init__()
+        super(CustomWideResNet101, self).__init__() 
         # Load pre-trained WideResNet50-2 model
         self.wide_resnet = models.wide_resnet101_2(pretrained=True)
         

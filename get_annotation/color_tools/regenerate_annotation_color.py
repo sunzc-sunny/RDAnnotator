@@ -6,6 +6,8 @@ from concurrent.futures import ThreadPoolExecutor
 from typing import List, Dict, Optional
 
 from .color_annotation_v3 import ColorAnnotatorV3
+from dotenv import load_dotenv
+load_dotenv()
 
 class RegenerateAnnotatorColorV3(ColorAnnotatorV3):
     """Tool for regenerating color annotations based on verification feedback."""

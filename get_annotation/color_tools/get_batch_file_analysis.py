@@ -1,6 +1,9 @@
 from openai import OpenAI
 import json
 import os
+from dotenv import load_dotenv
+load_dotenv()
+
 api_key = os.getenv('OPENAI_API_KEY', 'your-api-key-here')
 
 image_dir = "/home/sunzc/VisDrone2019/visdrone_color_image_test"

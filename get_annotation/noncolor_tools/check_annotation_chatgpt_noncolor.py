@@ -7,6 +7,8 @@ import random
 import os
 from concurrent.futures import ThreadPoolExecutor
 import re                                                                                            
+from dotenv import load_dotenv
+load_dotenv()
 
 
 
@@ -14,8 +16,7 @@ class CheckAnnotationNoncolor():
     def __init__(self, image_dir, info_dir, prompt_dir, save_dir, all_image_dir, caption_dir, annotation_dir, n=1):
         
         self.api_key = os.getenv('OPENAI_API_KEY', 'your-api-key-here')
-
-        self.url = "https://api.openai.com/v1/chat/completions" 
+        self.url = os.getenv('OPENAI_API_URL', 'https://api.openai.com/v1/chat/completions') 
 
         self.image_dir = image_dir
         self.info_dir = info_dir

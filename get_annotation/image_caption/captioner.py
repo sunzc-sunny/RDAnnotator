@@ -6,16 +6,17 @@ import os
 from concurrent.futures import ThreadPoolExecutor
 import re
 from PIL import Image
-
 from io import BytesIO
+from dotenv import load_dotenv
+load_dotenv()
 
 class Captioner():
     def __init__(self, image_dir, prompt_dir, save_dir, all_image_dir, n=3):
-        # OpenAI API Key
+        # OpenAI API Key and URL from environment variables
         self.api_key = os.getenv('OPENAI_API_KEY', 'your-api-key-here')
-
-        self.url = "https://api.openai.com/v1/chat/completions" 
-
+        self.url = os.getenv('OPENAI_API_URL', 'https://api.openai.com/v1/chat/completions') 
+        print('url: ', self.url)    
+        
         self.save_dir = save_dir
         self.image_dir = image_dir
         self.prompt_dir = prompt_dir
@@ -34,8 +35,7 @@ class Captioner():
         "messages": "",
         "temperature": 0.7,
         "top_p": 0.8,
-        "presence_penalty": 2.0, 
-        "n": self.n,
+        "presence_penalty": 2.0,
         }
         self.prompt_contents = [
         "Describe the image concisely.",
@@ -132,29 +132,32 @@ class Captioner():
         message.append(query_message)
         self.payload["messages"] = message
 
-        response = requests.post(self.url, headers=self.headers, json=self.payload)
-
-        res = response.json()
-        print(res)
         save_annotation_path = os.path.join(self.save_dir, image_name.replace(".jpg", ".txt"))
         save_respones = ""
-        if self.n == 1:
+        
+        # Call API n times and collect results
+        for i in range(self.n):
+            response = requests.post(self.url, headers=self.headers, json=self.payload)
+            res = response.json()
+            
+            if i == 0:
+                print(res)  # Only print the first response to avoid clutter
+            
+            # Extract content from the response
             res_content = res['choices'][0]['message']['content']
-            save_respones = res_content
-            with open(save_annotation_path, "w") as f:
-                f.write(save_respones)
-            print(f" save caption to {save_annotation_path}")
-
-        else:
-
-            for i in range(self.n):
-                res_content = res['choices'][i]['message']['content']
+            
+            if self.n == 1:
+                save_respones = res_content
+            else:
+                # For multiple calls, append each response
                 if "\n" in res_content:
                     res_content = res_content.replace("\n", "")
                 save_respones = save_respones + res_content + "\n\n"
-            with open(save_annotation_path, "w") as f:
-                f.write(save_respones)
-            print(f" save caption to {save_annotation_path}")
+        
+        # Save all responses to file
+        with open(save_annotation_path, "w") as f:
+            f.write(save_respones)
+        print(f" save caption to {save_annotation_path}")
 
         return save_respones
 
@@ -163,10 +166,10 @@ class Captioner():
 
 if __name__ == "__main__":
 
-    image_dir = "/data/sunzc/VisDrone2019/VisDrone2019-DET-train/10_1images"
-    save_dir = "/home/sunzc/VisDrone2019/10_1_annoaation_caption_v5"
-    all_image_dir = "/data/sunzc/VisDrone2019/VisDrone2019-DET-train/images"
-    prompt_dir = "/home/sunzc/chatgpt/prompts/caption"
+    image_dir = "/mnt/public/usr/sunzhichao/1_1images"
+    save_dir = "/mnt/public/usr/sunzhichao/RDAnnotator/save_results"
+    all_image_dir = "/mnt/public/usr/sunzhichao/VisDrone2019/all_image"
+    prompt_dir = "/mnt/public/usr/sunzhichao/RDAnnotator/prompts/caption"
 
     captioner = Captioner(image_dir=image_dir, prompt_dir=prompt_dir, save_dir=save_dir, all_image_dir=all_image_dir)
     
